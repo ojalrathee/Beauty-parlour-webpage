@@ -3,14 +3,14 @@ name: CI Pipeline - Build & Push Docker Image
 on:
   push:
     branches:
-      - main  # Agar tumhari branch ka naam 'master' hai, toh ise master kar dena
+      - main
 
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Tumhara code copy karega
+      # Step 1: code copy karega
       - name: Checkout Code
         uses: actions/checkout@v3
 
